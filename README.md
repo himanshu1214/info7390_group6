@@ -11,8 +11,8 @@
        docker build -t parse_file .
        docker run -ti parse_file
        ```
-       -i stands for interactive mode and -t will allocate a pseudo terminal for us.
-       in this way, you can input aws key and secret in docker
+       -i stands for interactive mode and -t will allocate a pseudo terminal for us.<br/>
+       In this way, you can input aws key and secret in docker
    * **parse_file.py**
        *--parse file python cource code*
    ### Problem 2: Missing Data Analysis
@@ -21,8 +21,8 @@
        docker build -t missing_data .
        docker run -ti missing_data
        ```
-       -i stands for interactive mode and -t will allocate a pseudo terminal for us.
-       in this way, you can input aws key and secret in docker
+       -i stands for interactive mode and -t will allocate a pseudo terminal for us.<br/>
+       In this way, you can input aws key and secret in docker
    * **missing_data.py** *--missing dat python source code*
 
 ## EDA and Data Visualization Practice work
