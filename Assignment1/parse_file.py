@@ -5,20 +5,28 @@ import pandas as pd
 import os
 import logging
 from configparser import ConfigParser
+import shutil
+import boto3
+import sys
 
-# check result and cleaned directory    
+# check directory    
 outdir = './result/cleaned_tables'
 if not os.path.exists(outdir):
     os.makedirs(outdir)
-logging.info('Check cleaned directory.')
 
-logging.basicConfig(filename='./result/parse_file.log', filemode='w', level=logging.DEBUG)
+# remove all handlers associated with the toot logger object
+for handler in logging.root.handlers[:]:
+    logging.root.removeHandler(handler)
+    
+# set up logging to file
+logging.basicConfig(filename='./result/parse_file_log.log', filemode='w', level=logging.INFO,
+                   format = '%(asctime)s%(levelname)-8s%(message)s')
 
 # read parameters CIK and acc_no from config file
 config = ConfigParser()
 config.read('config.ini')
-CIK = config.get('IBM','CIK')
-acc_no = config.get('IBM','acc_no')
+CIK = config.get('default','CIK')
+acc_no = config.get('default','acc_no')
 logging.info('Read parameters CIK and acc_no from config file.')
 
 # replace '_' in accession number
@@ -42,7 +50,8 @@ logging.info('Find 10-Q url through checking the file type in each table row.')
 try:
     df = pd.read_html(url10Q, header = None) 
 except Exception:
-   logging.warning('Error, wrong 10-Q url, fail to get 10-Q file.')
+    logging.warning('#######Error, wrong 10-Q url, fail to get 10-Q file.')
+    sys.exit('#######Error, wrong 10-Q url, fail to get 10-Q file.')
 
 # extrac raw tables, clean up the data, and write cleaned tables to cleaned directory
 # since first four table has no useful data, start with table[4]
@@ -72,3 +81,29 @@ for i in range(4, len(df)):
     # show the finished table and write to csv
     df1.to_csv(fullname,index=False, header=None) 
     logging.info('Write cleaned table' + str(i) + ' to csv.') 
+
+# zip the tables and log file in result.zip
+logging.info('Zip the tables and log file in result.zip')
+resultPath = os.path.join(os.getcwd(),'result')
+shutil.make_archive(resultPath,'zip',resultPath)
+
+# use AWS S3
+aws_key = input('Enter you aws access key: ')
+aws_secret = input('Enter aws secret access key: ')
+session = boto3.Session(
+    aws_access_key_id = aws_key,
+    aws_secret_access_key = aws_secret,)
+# before using AWS S3 bucket, make sure configuring aws credentials
+try:
+    s3 = session.resource('s3')
+except Exception:
+    logging.warn('######Error, please check aws configuration.')
+    sys.exit('######Error, please check aws configuration.')
+
+# create new bucket
+bucketName = 'info7390-group6-parse-file'
+s3.create_bucket(Bucket = bucketName)
+
+# upload result.zip to S3 bucket
+s3.meta.client.upload_file(os.path.join(os.getcwd(),'result.zip'),bucketName,'result.zip')
+

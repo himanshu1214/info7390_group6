@@ -1,0 +1,3 @@
+2018-10-11 20:53:32,321INFO    Opening and parse EDGAR Log File Data Set html.
+2018-10-11 20:53:32,431INFO    Get log file html of specified year.
+2018-10-11 20:53:32,434INFO    Get url of each month.
