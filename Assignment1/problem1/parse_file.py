@@ -88,11 +88,12 @@ resultPath = os.path.join(os.getcwd(),'result')
 shutil.make_archive(resultPath,'zip',resultPath)
 
 # use AWS S3
-aws_key = input('Enter you aws access key: ')
-aws_secret = input('Enter aws secret access key: ')
+aws_key = config.get('aws','aws_key')
+aws_secret = config.get('aws','aws_secret')
 session = boto3.Session(
     aws_access_key_id = aws_key,
     aws_secret_access_key = aws_secret,)
+# before using AWS S3 bucket, make sure configuring aws credentials
 # before using AWS S3 bucket, make sure configuring aws credentials
 try:
     s3 = session.resource('s3')
