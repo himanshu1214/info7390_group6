@@ -10,7 +10,6 @@ import os
 import sys
 import shutil
 import boto3
-from configparser import ConfigParser
 
 # check directory    
 outdir = './problem2_result'
@@ -109,14 +108,13 @@ logging.info('Zip the tables and log file in result.zip')
 resultPath = os.path.join(os.getcwd(),'problem2_result')
 shutil.make_archive(resultPath,'zip',resultPath)
 
-# use AWS S3
-config = ConfigParser()
-config.read('config.ini')
-aws_key = config.get('aws','aws_key')
-aws_secret = config.get('aws','aws_secret')
+# use aws S3
+aws_key = input('Enter you aws access key: ')
+aws_secret = input('Enter aws secret access key: ')
 session = boto3.Session(
     aws_access_key_id = aws_key,
     aws_secret_access_key = aws_secret,)
+
 # before using AWS S3 bucket, make sure configuring aws credentials
 try:
     s3 = session.resource('s3')
