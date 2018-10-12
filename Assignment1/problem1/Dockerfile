@@ -1,13 +1,18 @@
-FROM alpine:3.1
+FROM python:3.6.5
 
-# upadate
-
+# Update
+RUN pip install --upgrade pip
 
 # Install app dependencies
+RUN pip install boto3
+RUN pip install BeautifulSoup4
+RUN pip install pandas
+RUN pip install lxml
 
 
 # Bundle app source
-COPY parse_file.py /src/parse_file.py
+ADD parse_file.py /
+ADD config.ini /
 
 EXPOSE 8000
-CMD ["python", "/src/parse_file.py"]
+CMD ["python", "./parse_file.py"]

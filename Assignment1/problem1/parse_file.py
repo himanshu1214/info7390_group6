@@ -60,27 +60,31 @@ for i in range(4, len(df)):
     fullname = os.path.join(outdir, 'table' + str(i) + '.csv')    
     df1 = pd.DataFrame(df[i])
     
-    logging.info('Start to clean up Table' + str(i))
+    logging.info('Start to clean up Table ' + str(i) + '.')
 
     # replace the $ sign in the table
     df1 = df1.replace('$',None)
+    logging.info('Replace the $ sign in the table.')
     
-    # shift the row left whose firs column is empty
+    # shift the row left whose first column is empty
     s1 = df1[df1.columns[0]]
     for i,x in enumerate(s1):
         if pd.isnull(s1[i]) and i > 1:
             df1.iloc[i]=df1.iloc[i].shift(-1)
+    logging.info('Shift the row left whose first column is empty.')
 
     # drop the rows and columns which only contains none 
     df1.dropna(how='all',inplace=True)
     df1.dropna(axis=1, how = 'all',inplace=True)
+    logging.info('Drop the rows and columns which only contains none.')
 
     # replace nan to blank
     df1.fillna('',inplace=True)
+    logging.info('Replace nan to blank.')
 
     # show the finished table and write to csv
     df1.to_csv(fullname,index=False, header=None) 
-    logging.info('Write cleaned table' + str(i) + ' to csv.') 
+    logging.info('Write cleaned table to csv.') 
 
 # zip the tables and log file in result.zip
 logging.info('Zip the tables and log file in result.zip')
