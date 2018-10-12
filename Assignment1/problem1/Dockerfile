@@ -9,10 +9,8 @@ RUN pip install BeautifulSoup4
 RUN pip install pandas
 RUN pip install lxml
 
-
 # Bundle app source
 ADD parse_file.py /
 ADD config.ini /
 
-EXPOSE 8000
 CMD ["python", "./parse_file.py"]
