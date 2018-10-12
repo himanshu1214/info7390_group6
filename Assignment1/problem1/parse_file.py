@@ -101,13 +101,12 @@ session = boto3.Session(
 # before using AWS S3 bucket, make sure configuring aws credentials
 try:
     s3 = session.resource('s3')
+    # create new bucket
+    bucketName = 'info7390-group6-parse-file'
+    s3.create_bucket(Bucket = bucketName)
 except Exception:
     logging.warn('######Error, please check aws configuration.')
     sys.exit('######Error, please check aws configuration.')
-
-# create new bucket
-bucketName = 'info7390-group6-parse-file'
-s3.create_bucket(Bucket = bucketName)
 
 # upload result.zip to S3 bucket
 s3.meta.client.upload_file(os.path.join(os.getcwd(),'result.zip'),bucketName,'result.zip')

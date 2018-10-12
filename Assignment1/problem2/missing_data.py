@@ -40,8 +40,8 @@ try:
             logging.info('Get log file html of specified year.')
             break
 except Exception:
-    logging.warning('####Error, no ',year,'log file data set found')
-    sys.exit('####Error, no ',year,'log file data set found')
+    logging.warning('####Error, no ' + year + ' log file data set found')
+    sys.exit('####Error, no '+year+' log file data set found')
 
 # get url of each month
 monthList=[]
@@ -70,8 +70,8 @@ def remove_outlier(df,col_name):
     return df_out
 
 if len(monthList) != 12:
-    loggint.warning('####Error, there is something wrong with each month log file in ',year,'.')
-    sys.exit('####Error, there is something wrong with each month log file in ',year,'.')
+    logging.warning('####Error, there is something wrong with each month log file in '+year+'.')
+    sys.exit('####Error, there is something wrong with each month log file in '+year+'.')
     
 for i in range(0, 12):
     # download zip and parse csv file
@@ -118,13 +118,12 @@ session = boto3.Session(
 # before using AWS S3 bucket, make sure configuring aws credentials
 try:
     s3 = session.resource('s3')
+    # create new bucket
+    bucketName = 'info7390-group6-missing-data'
+    s3.create_bucket(Bucket = bucketName)
 except Exception:
     logging.warn('######Error, please check aws configuration.')
     sys.exit('######Error, please check aws configuration.')
-
-# create new bucket
-bucketName = 'info7390-group6-missing-data'
-s3.create_bucket(Bucket = bucketName)
 
 # upload result.zip to S3 bucket
 s3.meta.client.upload_file(os.path.join(os.getcwd(),'problem2_result.zip'),bucketName,'problem2_result.zip')
