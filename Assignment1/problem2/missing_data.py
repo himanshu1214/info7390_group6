@@ -40,7 +40,7 @@ try:
             logging.info('Get log file html of specified year.')
             break
 except Exception:
-    loggint.warning('####Error, no ',year,'log file data set found')
+    logging.warning('####Error, no ',year,'log file data set found')
     sys.exit('####Error, no ',year,'log file data set found')
 
 # get url of each month
