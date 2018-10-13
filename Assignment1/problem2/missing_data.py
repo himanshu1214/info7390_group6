@@ -122,7 +122,7 @@ try:
     bucketName = 'info7390-group6-missing-data'
     s3.create_bucket(Bucket = bucketName)
 except Exception:
-    logging.warn('######Error, please check aws configuration.')
+    logging.warning('######Error, please check aws configuration.')
     sys.exit('######Error, please check aws configuration.')
 
 # upload result.zip to S3 bucket
