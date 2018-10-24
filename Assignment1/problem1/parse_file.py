@@ -102,7 +102,7 @@ session = boto3.Session(
 try:
     s3 = session.resource('s3')
     # create new bucket
-    bucketName = 'info7390-group6-parse-file'
+    bucketName = 'info7390-group6-parse-file-review'
     s3.create_bucket(Bucket = bucketName)
 except Exception:
     logging.warning('######Error, please check aws configuration.')
