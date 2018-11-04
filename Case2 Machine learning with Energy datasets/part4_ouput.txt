@@ -1,0 +1,81 @@
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+Random Forest model:
+train data model estimation
+MAE: 
+0.0
+RMS: 
+0.0
+R2: 
+1.0
+MAPE: 
+0.0
+
+
+test data model estimation
+MAE: 
+31.47750304012971
+RMS: 
+80.36991392586377
+R2: 
+0.42703065969105525
+MAPE: 
+25.748087164642957
+Accuracy: 0.31090393190109444
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/linear_model/base.py:485: RuntimeWarning: internal gelsd driver lwork query error, required iwork dimension not returned. This is likely the result of LAPACK bug 0038, fixed in LAPACK 3.2.2 (released July 21, 2010). Falling back to 'gelss' driver.
+  linalg.lstsq(X, y)
+Linear regression model:
+train data model estimation
+MAE: 
+51.91202830611013
+RMS: 
+91.9603522879905
+R2: 
+0.17539009041084497
+MAPE: 
+59.851691414653274
+
+
+test data model estimation
+MAE: 
+54.27068982245355
+RMS: 
+97.88206100718826
+R2: 
+0.15013374069443508
+MAPE: 
+60.82293730592397
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/preprocessing/data.py:617: DataConversionWarning: Data with input dtype int64, float64 were all converted to float64 by StandardScaler.
+  return self.partial_fit(X, y)
+/Users/YYY/Desktop/INFO7390/Homework2/Prediction_alg/prediction_alg.py:140: DataConversionWarning: Data with input dtype int64, float64 were all converted to float64 by StandardScaler.
+  x_train_nn = scaler.transform(X_train)
+/Users/YYY/Desktop/INFO7390/Homework2/Prediction_alg/prediction_alg.py:141: DataConversionWarning: Data with input dtype int64, float64 were all converted to float64 by StandardScaler.
+  x_test_nn = scaler.transform(X_test)
+MLPClassifier(activation='relu', alpha=1e-05, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(5, 2), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+       random_state=1, shuffle=True, solver='lbfgs', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False)
+Neural network model:
+train data model estimation
+MAE: 
+41.71272211337072
+RMS: 
+100.91758600423064
+R2: 
+0.006927389931742356
+MAPE: 
+27.91975016762042
+
+
+test data model estimation
+MAE: 
+43.96635589785164
+RMS: 
+106.6445706576284
+R2: 
+-0.008839033226368809
+MAPE: 
+28.335449236604298
