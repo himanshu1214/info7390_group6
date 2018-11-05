@@ -1,0 +1,192 @@
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+Iteration: 	1 / 100
+Confirmed: 	0
+Tentative: 	31
+Rejected: 	0
+Iteration: 	2 / 100
+Confirmed: 	0
+Tentative: 	31
+Rejected: 	0
+Iteration: 	3 / 100
+Confirmed: 	0
+Tentative: 	31
+Rejected: 	0
+Iteration: 	4 / 100
+Confirmed: 	0
+Tentative: 	31
+Rejected: 	0
+Iteration: 	5 / 100
+Confirmed: 	0
+Tentative: 	31
+Rejected: 	0
+Iteration: 	6 / 100
+Confirmed: 	0
+Tentative: 	31
+Rejected: 	0
+Iteration: 	7 / 100
+Confirmed: 	0
+Tentative: 	31
+Rejected: 	0
+Iteration: 	8 / 100
+Confirmed: 	0
+Tentative: 	2
+Rejected: 	29
+Iteration: 	9 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	10 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	11 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	12 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	13 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	14 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	15 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	16 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	17 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	18 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	19 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	20 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	21 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	22 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	23 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	24 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	25 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	26 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	27 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	28 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	29 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	30 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	31 / 100
+Confirmed: 	1
+Tentative: 	1
+Rejected: 	29
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/boruta/boruta_py.py:418: RuntimeWarning: invalid value encountered in greater
+  hits = np.where(cur_imp[0] > imp_sha_max)[0]
+Iteration: 	32 / 100
+Confirmed: 	2
+Tentative: 	0
+Rejected: 	29
+
+
+BorutaPy finished running.
+
+Iteration: 	33 / 100
+Confirmed: 	2
+Tentative: 	0
+Rejected: 	29
+[ True False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False]
+
+Selected Feature Matrix Shape
+(19735, 2)
