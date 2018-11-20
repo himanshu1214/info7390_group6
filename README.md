@@ -1,6 +1,6 @@
 # info7390_group6
 
-## Assignment1
+## Case1 Working with EDGAR datasets
   Working with Edgar datasets: Wrangling, Pre-processing and exploratory data analysis
    ### Problem 1: Data wrangling Edgar data from text files
    * **config.ini** 
