@@ -3,7 +3,9 @@ Advance data science and architecture
 ## Case1 Working with EDGAR datasets
   Working with Edgar datasets: Wrangling, Pre-processing and exploratory data analysis.  
   
-  **EDGAR**, the Electronic Data Gathering, Analysis, and Retrieval system.performs automated collection, validation, indexing,     acceptance, and forwarding of submissions by companies and others who are required by law to file forms with the U.S. Securities and Exchange Commission (the "SEC")
+  **EDGAR**, the Electronic Data Gathering, Analysis, and Retrieval system.performs automated collection, validation, indexing,     acceptance, and forwarding of submissions by companies and others who are required by law to file forms with the U.S. Securities and Exchange Commission (the "SEC").
+  
+  See documentation [here](Case1%20working%20with%20EDGAR%20datasets/Assignment1%20report.pdf)
    ### Problem 1: Data wrangling Edgar data from text files
    * **config.ini** 
        *--store CIK, acc_no data*
@@ -34,4 +36,6 @@ Advance data science and architecture
   AdaptiveAlgo Systems Inc. works on solutions to build algorithms and platforms to address energy modeling challenges.  
   
   With the knowledge of energy consumed by various equipment, seasonality and attributes like temperature and humidity, a machine learning model could be used to predict aggregate energy use.
+  
+  See documentation [here](Case2%20Machine%20learning%20with%20Energy%20datasets/report.pdf)
 
