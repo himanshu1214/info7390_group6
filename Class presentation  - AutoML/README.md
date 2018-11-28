@@ -8,7 +8,8 @@
   
 2. H2O
 2. Google cloud AutoML
-4. Azure Machine Learning
+4. Azure Machine Learning  
+    see details [here](INFO7390_AutoML.pdf)
 
 ## PPT
-see document [here](INFO7390_AutoML.pdf)
+see documentation [here](INFO7390_AutoML.pdf)
