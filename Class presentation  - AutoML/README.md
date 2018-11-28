@@ -7,4 +7,4 @@
 4. Azure Machine Learning
 
 ## PPT
-see document [here](Class%20presentation%20%20-%20AutoML/INFO7390_AutoML.pdf)
+see document [here](INFO7390_AutoML.pdf)
