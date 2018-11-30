@@ -1,0 +1,11 @@
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+sys:1: DtypeWarning: Columns (14) have mixed types. Specify dtype option on import or set low_memory=False.
+sys:1: DtypeWarning: Columns (0,3,6,7,14,23,24) have mixed types. Specify dtype option on import or set low_memory=False.
+(499999, 27)
+['seq_no', 'MM_report', 'act_UPB', 'delinquency', 'load_age', 'MM_remain', 'repurch', 'modify', 'zero_code', 'zero_date', 'interest_rate', 'defer_UPB', 'DDLPI', 'MI_recover', 'sale_proceed', 'Non_MI_recover', 'expense', 'legal_cost', 'mainten', 'tax', 'mix_expense', 'loss', 'modify_cost', 'step_modify', 'defer_modify', 'ELTV', 'Y']
+Random Forest model:
+test data model estimation
+['N' 'N' 'N' ... 'N' 'N' 'N']
+[[468069   9312]
+ [ 20719   1899]]
