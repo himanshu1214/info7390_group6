@@ -38,10 +38,12 @@ BernoulliNB(alpha=1.0, binarize=0.0, fit_prior=True)
 y_pred = clf.predict(X_test)
 print (y_pred)
 
+tn, fp, fn, tp  = metrics.confusion_matrix(y_test, y_pred)
+print(tn, fp, fn, tp )
 
-Matrix[0][3] = data1.count()[0]
+Matrix[0][3] = tp
+Matrix[0][4] = fp
 print(Matrix)
 
-cnf_matrix = metrics.confusion_matrix(y_test, y_pred)
-print(cnf_matrix)
+
 
