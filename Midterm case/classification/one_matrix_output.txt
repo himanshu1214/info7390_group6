@@ -1,0 +1,12 @@
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+sys:1: DtypeWarning: Columns (14) have mixed types. Specify dtype option on import or set low_memory=False.
+sys:1: DtypeWarning: Columns (0,3,6,7,14,23,24) have mixed types. Specify dtype option on import or set low_memory=False.
+N    478328
+Y     21671
+Name: Y, dtype: int64
+['N' 'N' 'N' ... 'N' 'N' 'N']
+[[477381      0]
+ [ 22387    231]]
+477381
+[['Q12005', 21671, 231, 499999, 231, 0]]

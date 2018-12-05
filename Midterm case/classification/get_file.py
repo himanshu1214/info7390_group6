@@ -1,8 +1,3 @@
-import pandas as pd
-import numpy as np
-from sklearn import preprocessing
-import csv
-from sklearn import metrics
 import requests
 from robobrowser import RoboBrowser
 from bs4 import BeautifulSoup
@@ -19,8 +14,10 @@ import numpy as np
 
 import warnings
 warnings.filterwarnings('ignore')
-filename = 'Q12005'
 
+import missingno as msno
+from matplotlib import pyplot as plt
+import seaborn as sns
 
 filepath = './zipfile'
 #creating the folder for zipfiles
@@ -86,53 +83,6 @@ for row in df:
         row['Y'] = 'N'
 else:
    row['Y'] = 'Y'
-
-
-
-#working on a small file that is splited from the orginal csv file
-data1 = pd.read_csv('splitaa.csv',header=0)
-testdata = pd.read_csv('test_splitaa.csv',header=0,na_values=" NaN")
-testdata = testdata.replace([np.inf, -np.inf], np.nan)
-testdata = testdata.replace([np.inf, -np.inf], np.nan).dropna(subset=['MM_report', 'act_UPB', 'load_age', 'MM_remain','interest_rate','defer_UPB'], how="all")
-X = data1.Y.value_counts()
-
-print(data1.Y.value_counts())
-
-w,h = 6,1;
-Matrix = [[0 for x in range(w)] for y in range(h)]
- 
-Matrix[0][0] = filename
-Matrix[0][1] = data1.Y.value_counts()[1]
-
-Matrix[0][3] = data1.count()[0]
-
-import numpy as np
-
-feature_cols = ['MM_report', 'act_UPB', 'load_age', 'MM_remain','interest_rate','defer_UPB']
-y=data1.Y
-X=data1[feature_cols]
-#testdata
-y_test = testdata.Y
-X_test = testdata[feature_cols]
-X = data1[feature_cols]
-Y = data1.Y
-from sklearn.naive_bayes import BernoulliNB
-clf = BernoulliNB(alpha=0.01, fit_prior=True)
-clf.fit(X, Y)
-
-y_pred = clf.predict(X_test)
-print (y_pred)
-
-cnf_matrix = metrics.confusion_matrix(y_test, y_pred)
-print(cnf_matrix)
-
-print(cnf_matrix[0][0])
-
-#print(tn, fp, fn, tp )
-Matrix[0][2] = cnf_matrix[1][1] + cnf_matrix[0][1]
-Matrix[0][4] = cnf_matrix[1][1]
-Matrix[0][5] = cnf_matrix[0][1]
-print(Matrix)
-
-
-
+   
+   
+   
