@@ -17,6 +17,9 @@ RUN curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requiremen
 RUN mkdir /midterm-case
 ADD Part1-Data_wrangling.ipynb /midterm-case
 ADD Part1-Download.py /midterm-case
+ADD Archive /midterm-case
+ADD Part12-data_wrangling.ipynb /midterm-case
+ADD script.sh /midterm-case
 
 # Install python modules
 RUN pip3 install \
@@ -28,5 +31,4 @@ RUN pip3 install \
   plotly
 
 # start download origination and perforation data
-CMD python3 /midterm-case/Part1-Download.py \
-   && jupyter notebook --ip 0.0.0.0 --no-browser --allow-root --notebook-dir='/midterm-case'
+CMD /bin/bash midterm-case/script.sh
