@@ -7,7 +7,7 @@
     * auto-sklearn.ipynb 
   
 2. H2O
-      attached a simple h20 test version of the python code, after install h20 (using pip install) apply the code, the result should showed up correctly
+      attached a simple h20 test version of the python code, after install h20 (using pip install) apply the code, the result should showed up correctly. For more information, please visit github :https://github.com/h2oai/h2o-tutorials
 2. Google cloud AutoML
       create google platform
       automl natural language
