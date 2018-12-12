@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form style="background-color: #fafafa; padding:0.5rem">
+    <div class="form-group">
+        <label for="click_stream">Click Stream</label>
+        <input type="text" class="form-control" id="click_stream" aria-describedby="clickStreamHelp" placeholder="Enter customer click stream">
+        <small id="clickStreamHelp" class="form-text text-muted">Information about the series of pages that users clicked on Wayfair patform.</small>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="product_id">Product Id</label>
+            <input type="text" class="form-control" id="product_id" placeholder="Enter product ID">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="customer_id">Customer Id</label>
+            <input type="text" class="form-control" id="customer_id" placeholder="Enter customer ID">
+        </div> 
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="company">Company</label>
+            <select id="company" class="form-control">
+                <option selected>Choose...</option>
+                <option>Amazon</option>
+                <option>Wayfair</option>
+                <option>Build</option>
+            </select>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>  
+{% endblock %}
