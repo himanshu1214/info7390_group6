@@ -2,4 +2,4 @@
 http://ec2-54-145-233-135.compute-1.amazonaws.com
 
 # Docker full pipeline
-https://cloud.docker.com/u/xinglong/repository/docker/xinglong/wayfair
+https://hub.docker.com/r/xinglong/wayfair
