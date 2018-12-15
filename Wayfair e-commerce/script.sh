@@ -9,9 +9,8 @@ fi
 
 echo "Want to open web application? y/n"
 read input1
-if [ $input == "y" ] || [ $input == "Y" ]; then
+if [ $input1 == "y" ] || [ $input1 == "Y" ]; then
     python3 WayfairFinal/flask/app.py
 fi
 
-cd WayfairFinal
-ls
+/bin/bash
