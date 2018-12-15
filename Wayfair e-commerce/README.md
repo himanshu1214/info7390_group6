@@ -24,14 +24,15 @@ click Welcome to navigate through the website
 https://hub.docker.com/r/xinglong/wayfair
 
 # Demo
-1. AWS
+1. **AWS**
+![image](https://github.com/xinglongjia/info7390_group6/blob/master/Wayfair%20e-commerce/presentation_image/aws.png)
 ![image](https://github.com/xinglongjia/info7390_group6/blob/master/Wayfair%20e-commerce/presentation_image/aws-index.png)
-![image](https://github.com/xinglongjia/info7390_group6/tree/master/Wayfair%20e-commerce/presentation_image/aws-classification.png)
-![image](https://github.com/xinglongjia/info7390_group6/tree/master/Wayfair%20e-commerce/presentation_image/aws-regression.png)
-![image](https://github.com/xinglongjia/info7390_group6/tree/master/Wayfair%20e-commerce/presentation_image/aws-eda.png)
-![image](https://github.com/xinglongjia/info7390_group6/tree/master/Wayfair%20e-commerce/presentation_image/aws-aboutus.png)
-2. Docker
-![image](https://github.com/xinglongjia/info7390_group6/tree/master/Wayfair%20e-commerce/presentation_image/docker-notebook.png)
-![image](https://github.com/xinglongjia/info7390_group6/tree/master/Wayfair%20e-commerce/presentation_image/docker-web.png)
+![image](https://github.com/xinglongjia/info7390_group6/blob/master/Wayfair%20e-commerce/presentation_image/aws-classification.png)
+![image](https://github.com/xinglongjia/info7390_group6/blob/master/Wayfair%20e-commerce/presentation_image/aws-regression.png)
+![image](https://github.com/xinglongjia/info7390_group6/blob/master/Wayfair%20e-commerce/presentation_image/aws-eda.png)
+![image](https://github.com/xinglongjia/info7390_group6/blob/master/Wayfair%20e-commerce/presentation_image/aws-aboutus.png)
+2. **Docker**
+![image](https://github.com/xinglongjia/info7390_group6/blob/master/Wayfair%20e-commerce/presentation_image/docker-notebook.png)
+![image](https://github.com/xinglongjia/info7390_group6/blob/master/Wayfair%20e-commerce/presentation_image/docker-web.png)
 
 
