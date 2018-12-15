@@ -1,0 +1,112 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1 class="display-4 text-center title-effect">Regression Model</h1>
+<hr>
+<form style="background-color: #fafafa; padding:0.5rem" method="POST" action="">
+
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="zipcode">Zipcode</label>
+            <input type="number" class="form-control" id="zipcode" name="zipcode" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="quantity">Quantity</label>
+            <input type="number" class="form-control" id="quantity" name="quantity" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="weight">Product weight</label>
+            <input type="number" class="form-control" id="weight" name="weight" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="num-views">Number of reviews</label>
+            <input type="number" class="form-control" id="num-views" name="num-views" value="0">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="price">Product price</label>
+            <input type="number" class="form-control" id="price" name="price" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="promotion">Promotion</label>
+            <select id="promotion" name="promotion" class="form-control">
+                <option selected>Choose...</option>
+                <option>1</option>
+                <option>0</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="tax">Tax return</label>
+            <input type="number" class="form-control" id="tax" name="tax" value="0">
+        </div>
+        
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="date">Data</label>
+            <select id="date" name="date" class="form-control">
+                <option selected>Choose...</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="time">Time</label>
+            <select id="time" name="time" class="form-control">
+                <option selected>Choose...</option>
+                <option>morning</option>
+                <option>afternoon</option>
+                <option>evening</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="description">Length of description</label>
+            <input type="number" class="form-control" id="description" name="description" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="category">Count of category name</label>
+            <input type="number" class="form-control" id="category" name="category" value="0">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="manufacturer">Count of manufacturer name</label>
+            <input type="number" class="form-control" id="manufacturer" name="manufacturer" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="category-ratio">Ratio of category name</label>
+            <input type="number" class="form-control" id="category-ratio" name="category-ratio" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="manufacturer-ratio">Ratio of manufacturer name</label>
+            <input type="number" class="form-control" id="manufacturer-ratio" name="manufacturer-ratio" value="0">
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>  
+
+<div class="jumbotron jumbotron-fluid shadow-effect text-center" style="background-color: white">
+    <div class="container">
+        <h1 class="display-4">Regression Result</h1>
+        <p class="lead">Predict the order value. </p>
+            
+    </div>
+    <div>
+        {{data | safe}}
+    </div>
+</div>
+
+<div class="jumbotron text-center shadow-effect">
+        <img src="../static/images/reg1.png" class="img-fluid" alt="Responsive image"></src>      
+</div>
+{% endblock %}

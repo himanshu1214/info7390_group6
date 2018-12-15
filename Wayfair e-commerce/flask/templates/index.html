@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wayfair E-commerce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#welcome").mouseover(function(event){
+                    event.stopPropagation();
+                    $("#index-title").show(2000);
+                })
+
+                $("#hide").click(function(event){
+                    event.stopPropagation();
+                    $("#index-title").hide(1000);
+                })
+            })
+        </script>
+    </head>
+
+    <body>
+        
+        <div class="jumbotron jumbotron-fluid" id="index-title" style="padding-bottom:40px">
+            <div class="container text-center" style="padding-top:8%;">
+                <h1 class="display-4">Wayfair E-commerce</h1>
+                <h2 class="display-6">Group 6</h2>
+                <hr>
+                <p class="lead">To analyze the Wayfair ecommerce clickstream data, potentially in combination with supplementary datasets, in order to increase the understanding of how various factors influence customer purchasing patterns on the Wayfair online platform.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button" id="hide">Hide</a>
+            </div>
+        </div>
+        <div class="bg">
+            <div id="welcome">
+                <a class="btn btn-light btn-lg" href="/introduction" role="button" style="width:100%;font-size: 2rem; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">WELCOME</a>
+            </div>
+            
+        </div>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    </body>
+    <footer>
+
+    </footer>
+</html>

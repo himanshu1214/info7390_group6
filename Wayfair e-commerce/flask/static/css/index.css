@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+.bg{
+     /* The image used */
+  background-image: url("../images/bg.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+#welcome{
+  position: fixed;
+  width: 100%;
+  top: 0;
+	background: #555;
+  background-color: white
+}
+
+#index-title{
+  display: none;
+  margin: 0;
+}

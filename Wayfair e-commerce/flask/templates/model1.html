@@ -1,0 +1,167 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1 class="display-4 text-center title-effect">Classification Model</h1>
+<hr>
+
+<form style="background-color: #fafafa; padding:0.5rem" method="POST" action="">
+    
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="date">Data</label>
+            <select id="date" name="date" class="form-control">
+                <option selected>Choose...</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+            </select>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="time">Time</label>
+            <select id="time" name="time" class="form-control">
+                <option selected>Choose...</option>
+                <option>morning</option>
+                <option>afternoon</option>
+                <option>evening</option>
+            </select>
+        </div> 
+    </div>
+    <div>
+        <label>Page Viewed</label>
+        <hr class="my-1">
+    </div>
+    <div class="form-row" style="font-size:0.8rem">
+        <div class="form-group col-md-3">
+            <label for="page1">BASKETLOADPAGE</label>
+            <input class="form-control" id="page1" name="page1" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+                <label for="page2">CATEGORYDEPARTMEN</label>
+                <input class="form-control" id="page2" name="page2" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="page3">CATEGORYQUICKBROWSE</label>
+            <input class="form-control" id="page3" name="page3" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="page4">CATEGORYSTANDARD</label>
+            <input class="form-control" id="page4" name="page4" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-row" style="font-size:0.8rem">
+        <div class="form-group col-md-3">
+            <label for="page5">CHECKOUTBASKET</label>
+            <input class="form-control" id="page5" name="page5" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+                <label for="page6">CHECKOUTPRODUCTUPSELLGROUP</label>
+                <input class="form-control" id="page6" name="page6" type="number" value="0">
+        </div>
+    
+        <div class="form-group col-md-3">
+            <label for="page7">DAILYSALESCLOSEOUTPAGE</label>
+            <input class="form-control" id="page7" name="page7" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+                <label for="page8">DAILYSALESEVENTPAGE</label>
+                <input class="form-control" id="page8" name="page8" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-row" style="font-size:0.8rem">
+        <div class="form-group col-md-3">
+            <label for="page9">DAILYSALESMAINPAGE</label>
+            <input class="form-control" id="page9" name="page9" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="page10">DAILYSALESPRODUCTPAGE</label>
+            <input class="form-control" id="page10" name="page10" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="page11">DAILYSALESSOLREVENTPAGE</label>
+            <input class="form-control" id="page11" name="page11" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+                <label for="page12">HOMEPAGE</label>
+                <input class="form-control" id="page12" name="page12" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-row" style="font-size:0.8rem">
+        <div class="form-group col-md-3">
+            <label for="page13">KEYWORDSEARCH</label>
+            <input class="form-control" id="page13" name="page13" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+                <label for="page14">PRODUCTKIT</label>
+                <input class="form-control" id="page14" name="page14" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="page15">PRODUCTOPTIONSKU</label>
+            <input class="form-control" id="page15" name="page15" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="page16">PRODUCTSIMPLESKU</label>
+            <input class="form-control" id="page16" name="page16" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-row" style="font-size:0.8rem">
+        <div class="form-group col-md-3">
+            <label for="page17">SAVETOBOARDMODALSCREEN</label>
+            <input class="form-control" id="page17" name="page17" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+                <label for="page18">STLLANDINGPAGE</label>
+                <input class="form-control" id="page18" name="page18" type="number" value="0">
+        </div>
+    
+        <div class="form-group col-md-3">
+            <label for="page19">SUPERBROWSECATEGORY</label>
+            <input class="form-control" id="page19" name="page19" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+                <label for="page20">SUPERBROWSECATEGORY1ATTRIBUTES</label>
+                <input class="form-control" id="page20" name="page20" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-row" style="font-size:0.8rem">
+        <div class="form-group col-md-3">
+            <label for="page21">SUPERBROWSECATEGORY2ATTRIBUTES</label>
+            <input class="form-control" id="page21" name="page21" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="page22">SUPERBROWSECATEGORY3ATTRIBUTES</label>
+            <input class="form-control" id="page22" name="page22" type="number" value="0">
+        </div>  
+        <div class="form-group col-md-3">
+            <label for="page23">SUPERBROWSECATEGORY4+ATTRIBUTES</label>
+            <input class="form-control" id="page23" name="page23" type="number" value="0">
+        </div>
+        <div class="form-group col-md-3">
+                <label for="page24">SUPERBROWSEHOTDEALS</label>
+                <input class="form-control" id="page24" name="page24" type="number" value="0">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+</form>
+
+<div class="jumbotron jumbotron-fluid shadow-effect text-center" style="background-color: white">
+    <div class="container">
+        <h1 class="display-4">Classification Result</h1>
+        <p class="lead">Predict whether user will buy the prodect or not. </p>
+        <p class="card-text"><small class="text-muted"> 1 - Buy, 0 - Not buy</small></p>
+        
+    </div>
+    <div>
+        {{data | safe}}
+    </div>
+</div>
+
+<div class="jumbotron text-center shadow-effect">
+    <img src="../static/images/class1.png" class="img-fluid" alt="Responsive image"></src>      
+</div>
+
+{% endblock %}

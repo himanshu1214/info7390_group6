@@ -1,0 +1,64 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1 class="display-4 text-center title-effect" >Wayfair E-commerce</h1>
+<hr>
+
+<div class="card mb-3 shadow-effect" style="background-color:#e9ecef">
+  <img class="card-img-top" src="../static/images/word_cloud_1.png" alt="Card image cap" >
+  <div class="card-body">
+    <h5 class="card-title">Word frequency in product description</h5>
+    <p class="card-text">Find the most likely word in product description.</p>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid shadow-effect" style="background-color:white">
+  <div class="container">
+    <h1 class="display-4">Overview</h1>
+    <hr>
+    <p class="lead">Analyze the Wayfair ecommerce clickstream data, 
+        potentially in combination with supplementary datasets, 
+        in order to increase the understanding of how various factors influence customer purchasing patterns on the Wayfair online platform.
+      </p>
+      <p class="lead">
+        Finding the pattern of the user clicking behavior
+      </p> 
+      <p class="lead">
+        build general predictive regression model based on historical orders.
+      </p>
+  </div> 
+</div>
+
+<div class="jumbotron jumbotron-fluid shadow-effect" >
+  <div class="container">
+    <h1 class="display-4">Datasets</h1>
+    <hr>
+    <p class="lead">Dataset we have: </p>
+    <ul>
+      <li><p class="lead">Clickstream with purchase  : clickstream purchase from Wayfair</p></li>
+      <li><p class="lead">Clickstream without purchase: clickstream purchase from Wayfair</p></li>
+      <li><p class="lead">Orders : orders information online  during one week</p></li>
+      <li><p class="lead">Products : products attributes sold by wayfair</p></li>
+      <li><p class="lead">Comp_products: competitor data of products with attributes sold</p></li>
+      <li><p class="lead">Taxes: data about the demography i.e taxes, incomes level, zip </p></li>
+    </ul>
+  </div> 
+</div>
+
+<div class="jumbotron jumbotron-fluid shadow-effect" style="background-color: white">
+  <div class="container">
+      <h1 class="display-4">Workflow</h1>
+      <hr>
+      <ol>
+        <li><p class="lead">Data Processing</p></li>
+        <li><p class="lead">Exploratory Data Analysis</p></li>
+        <li><p class="lead">Feature selection</p></li>
+        <li><p class="lead">Train model</p></li>
+        <li><p class="lead">Dockerize full pipeline</p></li>
+        <li><p class="lead">Build web application</p></li>
+        <li><p class="lead">Deploy web on AWS ec2 instance</p></li>
+      </ol>
+  </div> 
+</div>
+
+{% endblock %}
