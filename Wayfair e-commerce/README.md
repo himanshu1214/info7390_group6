@@ -1,6 +1,8 @@
 # AWS web application
 http://ec2-54-145-233-135.compute-1.amazonaws.com
 
+click Welcome to navigate through the website
+
 # Docker full pipeline
 
 1. Dockerfile
