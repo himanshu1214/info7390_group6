@@ -1,7 +1,5 @@
 # AWS web application
-ec2-3-83-107-254.compute-1.amazonaws.com
-
-click Welcome to navigate through the website
+http://ec2-3-83-107-254.compute-1.amazonaws.com
 
 # Docker full pipeline
 
