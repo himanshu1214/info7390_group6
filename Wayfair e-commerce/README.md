@@ -1,5 +1,5 @@
 # AWS web application
-http://ec2-54-145-233-135.compute-1.amazonaws.com
+ec2-3-83-107-254.compute-1.amazonaws.com
 
 click Welcome to navigate through the website
 
